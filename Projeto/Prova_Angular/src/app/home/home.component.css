@@ -1,0 +1,33 @@
+.bg{
+  background-image: url("src\assets\img\ranger.png");
+ }
+
+.card {
+  box-sizing: border-box;
+  box-shadow: 1px 1px 2px #cecece;
+  width: 500px;
+  height: 500px;
+  opacity: 0.9
+}
+
+.card-content {
+  padding: 8px 16px;
+}
+
+.card-title {
+  background-color: #eee;
+  color: #8c8c8c;
+  padding: 8px 0 8px 8px;
+  margin: 0;
+}
+
+.card-info {
+  color: #80abff;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin: 2px 0;
+}
+
+
+
+

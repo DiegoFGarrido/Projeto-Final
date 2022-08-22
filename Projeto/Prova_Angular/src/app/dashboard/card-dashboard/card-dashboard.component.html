@@ -1,0 +1,48 @@
+<div>
+  <div class="cards-list">
+    <div class="card">
+      <h3 class="card-title">Veículo</h3>
+      <div class="card-content">
+        <select class="dropdown" (change)="onChange($event)">
+          <option *ngFor="let item of veiculos" value="{{ item.id }}">
+            {{ item.veiculo }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Total de Vendas</h3>
+      <div class="card-content">
+        <p class="card-info">{{ selected?.volume ?? 0 }}</p>
+        <span>Und.</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Conectados</h3>
+      <div class="card-content">
+        <p class="card-info">{{ selected?.conectado ?? 0 }}</p>
+        <span>Und.</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Update Software</h3>
+      <div class="card-content">
+        <p class="card-info">{{ selected?.atualizacao ?? 0 }}</p>
+        <span>Und.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="veiculo-img">
+    <img src="assets/img/{{ vehicleImg() }}" *ngIf="selected?.veiculo" />
+    <div class="graficos">
+      <app-grafico-dashboard [carroConectado]="selected"></app-grafico-dashboard>
+    </div>
+  </div>
+
+</div>
+
+
