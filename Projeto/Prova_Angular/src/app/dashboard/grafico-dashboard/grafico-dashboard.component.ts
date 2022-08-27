@@ -74,7 +74,8 @@ export class GraficoDashboardComponent implements OnInit {
     return {
       //'title': 'Conectados x OffLine',
       'width': 400,
-      'height': 200
+      'height': 200,
+      'colors': ['darkblue', 'lightgrey']
     };
   }
 
@@ -93,7 +94,8 @@ export class GraficoDashboardComponent implements OnInit {
       //'title': 'Atualizados x Desatualizados',
       'is3D': true,
       'width': 400,
-      'height': 200
+      'height': 200,
+      'colors': ['darkblue', 'lightgrey']
     };
   }
 
