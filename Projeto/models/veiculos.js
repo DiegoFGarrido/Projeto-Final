@@ -14,8 +14,7 @@ class Veiculos{
     }
 
     listaVeiculo(res){
-        const sql = 'SELECT * FROM veiculos'
-        
+        const sql = 'SELECT veiculos.id, veiculos.veiculo, veiculos.volume, veiculos.conectado, veiculos.atualizacao FROM veiculos'
         conexao.query(sql, (erro, resultados) => {            
             if(erro) {               
                 res.status(400).json(erro) 
