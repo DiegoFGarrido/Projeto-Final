@@ -15,7 +15,7 @@
 }
 
 .card-content {
-  padding: 8px 16px;
+  padding: 16px 16px;
 }
 
 .card-title {
@@ -23,10 +23,12 @@
   color: #8c8c8c;
   padding: 8px 0 8px 8px;
   margin: 0;
+  font-weight: bolder;
+  font-size: 23px;
 }
 
 .card-info {
-  color: #80abff;
+  color: darkblue;
   font-size: 1.3rem;
   font-weight: bolder;
   margin: 2px 0;
@@ -36,6 +38,8 @@
   position: relative;
   top: 10px;
   width: 100%;
+  color: darkblue;
+  font-weight: bolder
 }
 
 .veiculo-img {
