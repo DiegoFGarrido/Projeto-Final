@@ -17,7 +17,7 @@ class Usuario{
     }
 
     listaUsuario(res){
-        const sql = 'SELECT * FROM usuario'
+        const sql = 'SELECT usuario.id, usuario.nome, usuario.email, usuario.senha, usuario.nomeCompleto, usuario.dataCriacao FROM usuario'
         
         conexao.query(sql, (erro, resultados) => {            
             if(erro) {               
@@ -29,7 +29,7 @@ class Usuario{
     }
 
     buscaUsuarioLogin(req, res){
-        const sql = 'SELECT * FROM usuario WHERE nome =? and senha =?'
+        const sql = 'SELECT usuario.nome, usuario.senha FROM usuario WHERE nome =? and senha =?'
         
         conexao.query(sql, [req.body.nome, req.body.senha], (erro, resultados) => {            
             if(erro) {               
