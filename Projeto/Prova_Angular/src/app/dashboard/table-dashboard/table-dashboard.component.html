@@ -1,6 +1,6 @@
 <table class="table">
   <thead class="thead-dark">
-    <tr>
+    <tr class="cabecalho">
       <th scope="col">Codigo-Vin</th>
       <th scope="col">Odometro</th>
       <th scope="col">Nivel de Combustivel</th>
@@ -9,19 +9,27 @@
       <th scope="col">Long.</th>
     </tr>
   </thead>
+
   <tbody>
-    <tr>
+    <tr class="informacoes">
       <td>
         <input type="text" class="form-control" (keyup.enter)="onHitEnter(vin.value)"
         value="{{ selected?.vin }}" #vin>
-
       </td>
       <td>{{ selected?.odometer ?? 0 }}</td>
       <td>{{ selected?.fuelLevel ?? 0 }}</td>
       <td>{{ selected?.status ?? 0 }}</td>
-      <td>{{ selected?.lat ?? 0 }}</td>
-      <td>{{ selected?.long ?? 0 }}</td>
+      <td>{{ selected?.latitude ?? 0 }}</td>
+      <td>{{ selected?.longitude ?? 0 }}</td>
     </tr>
-
+    <tr class="rodape">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
+
 </table>

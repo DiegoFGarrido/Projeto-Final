@@ -22,9 +22,6 @@ export class TableDashboardComponent implements OnInit {
   }
 
   onHitEnter(vinCode: string) {
-    // seleciona o item da lista de estatísticas com base no código VIN digitado
-    // essa função é disparada apenas quando o usuário teclar ENTER
-
     const [stats] = this.statsVeiculos.filter((item: any) => item.vin === vinCode);
     this.selected = stats;
   }
